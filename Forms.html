@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+<!-- Vertical form -->
+<form role="form">
+ <div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" class="form-control" id="email" placeholder="Введите email">
+  <p class="help-block">Пример строки с подсказкой</p>
+ </div>
+ <div class="form-group">
+  <label for="pass">Пароль</label>
+  <input type="password" class="form-control" id="pass" placeholder="Пароль">
+ </div>
+ <div class="checkbox">
+  <label><input type="checkbox"> Чекбокс</label>
+ </div>
+ <button type="submit" class="btn btn-success">Войти</button>
+</form>
+<br>
+<!-- end vertical form -->
+
+<!-- string form -->
+<form role="form" class="form-inline">
+ <div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" class="form-control" id="email" placeholder="Введите email">
+ </div>
+ <div class="form-group">
+  <label for="pass">Пароль</label>
+  <input type="password" class="form-control" id="pass" placeholder="Пароль">
+ </div>
+ <button type="submit" class="btn btn-success">Войти</button>
+</form>
+<br>
+<br>
+<!-- end string form -->
+
+
+<!-- horisontal form -->
+<form class="form-horizontal">
+ <div class="form-group">
+  <label for="mail" class="col-sm-2 control-label">Email</label>
+  <div class="col-sm-10">
+   <input type="email" class="form-control" id="mail" placeholder="Email">
+  </div>
+ </div>
+ <div class="form-group">
+  <label for="pass" class="col-sm-2 control-label">Пароль</label>
+  <div class="col-sm-10">
+   <input type="password" class="form-control" id="pass" placeholder="Пароль">
+  </div>
+ </div>
+ <div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+   <div class="checkbox">
+    <label>
+     <input type="checkbox"> Запомнить меня
+    </label>
+   </div>
+  </div>
+ </div>
+ <div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+   <button type="submit" class="btn btn-success">Подтвердить</button>
+  </div>
+ </div>
+</form>
+<br>
+<br>
+<!-- end horisontal form -->
+
+<!-- checkbox and radiobutton -->
+<div class="checkbox-inline">
+ <label class="checkbox">
+  <input type="checkbox" value="check1">
+  Обычный чекбокс, который можно отметить
+ </label>
+</div>
+<div class="checkbox disabled">
+ <label>
+  <input type="checkbox" value="check2" disabled>
+  Заблокированный чекбокс, не отмечается
+ </label>
+</div>
+<br>
+
+<div class="radio">
+ <label>
+  <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+  Первый элемент списка из радиокнопок, её можно выбирать
+ </label>
+</div>
+<div class="radio">
+ <label>
+  <input type="radio" name="optionsRadios" id="radio22" value="option2" disabled>
+  Вторая опция списка, заблокированная
+ </label>
+</div>
+<div class="radio disabled">
+  <label>
+  <input type="radio" name="optionsRadios" id="radio3" value="option3">
+  Третья смешная опция
+ </label>
+</div>
+
+<!-- end checkbox and radiobutton -->
+
+<!-- droup list -->
+<select class="form-control">
+ <option>1</option>
+ <option>2</option>1
+
+ <option>3</option>
+ <option>4</option>
+ <option>5</option>
+</select>
+<!-- end droup list -->
+
+
+<!-- static field -->
+<form class="form-horizontal">
+ <div class="form-group">
+  <label class="col-sm-2 control-label">Электропочта</label>
+  <div class="col-sm-10">
+   <p class="form-control-static">email@example.com</p>
+  </div>
+ </div>
+ <div class="form-group">
+  <label for="pass" class="col-sm-2 control-label">Пароль</label>
+  <div class="col-sm-10">
+   <input type="password" class="form-control" id="pass" placeholder="Пароль">
+  </div>
+ </div>
+</form>
+<!-- end static field -->
+
+<!-- context classes -->
+<div class="form-group has-success">
+ <label class="control-label" for="succ">Поле без ошибок</label>
+ <input type="text" class="form-control" id="succ">
+</div>
+<div class="form-group has-warning">
+ <label class="control-label" for="warn">Поле с предупреждением</label>
+ <input type="text" class="form-control" id="warn">
+</div>
+<div class="form-group has-error">
+ <label class="control-label" for="err">Поле с ошибкой</label>
+ <input type="text" class="form-control" id="err">
+</div>
+<div class="has-success">
+ <div class="checkbox">
+  <label>
+  <input type="checkbox" id="check-succ" value="option1">
+  Чекбокс без ошибок
+ </label>
+ </div>
+</div>
+<div class="has-warning">
+ <div class="checkbox">
+ <label>
+  <input type="checkbox" id="check-warn" value="option1">
+  чекбокс с предупреждением
+  </label>
+ </div>
+</div>
+<div class="has-error">
+ <div class="checkbox">
+  <label>
+  <input type="checkbox" id="checkboxError" value="option1">
+  Чекбокс с ошибкой
+ </label>
+ </div>
+</div>
+
+
+
+</body>
+</html>
